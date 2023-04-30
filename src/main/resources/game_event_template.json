@@ -1,0 +1,11 @@
+{
+  "game": "%GAMENAME%",
+  "event": "%EVENTNAME%",
+  "data": {
+    "value": "%VALUE%",
+    "frame": {
+      "first": "%FIRST%",
+      "second": "%FIRST%"
+    }
+  }
+}

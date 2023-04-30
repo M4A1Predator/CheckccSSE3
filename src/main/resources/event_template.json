@@ -1,0 +1,28 @@
+{
+  "game": "%GAMENAME%",
+  "event": "HEALTH",
+  "min_value": 0,
+  "max_value": 16000,
+  "icon_id": 1,
+  "handlers": [
+    {
+      "device-type": "screened",
+      "zone": "one",
+      "mode": "screen",
+      "datas": [
+        {
+          "lines": [
+            {
+              "has-text": true,
+              "context-frame-key": "first"
+            },
+            {
+              "has-text": true,
+              "context-frame-key": "second"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+<service>
+    <id>Checkcc</id>
+    <name>Checkcc</name>
+    <description>Display Crypto Price on Steelseries Keyboard</description>
+    <env name="CHECKCC_HOME" value="%BASE%"/>
+    <executable>java</executable>
+    <arguments>-Xmx256m -jar "D:\plusplus\checkcc\build\libs\checkcc-0.0.1.jar"</arguments>
+    <logmode>rotate</logmode>
+</service>
