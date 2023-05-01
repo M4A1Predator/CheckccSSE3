@@ -1,0 +1,6 @@
+{
+  "apiUrl": "https://api.binance.com/api/v3/trades",
+  "symbol": "ETHBUSD",
+  "label": "ETH",
+  "format":  "#.00"
+}

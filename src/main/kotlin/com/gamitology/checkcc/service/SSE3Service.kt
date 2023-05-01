@@ -1,12 +1,10 @@
 package com.gamitology.checkcc.service
 
-import com.gamitology.checkcc.util.createPostReq
 import com.fasterxml.jackson.databind.ObjectMapper
+import com.gamitology.checkcc.util.createPostReq
 import org.springframework.core.io.ClassPathResource
 import org.springframework.stereotype.Component
-import org.springframework.util.ResourceUtils
 import java.io.*
-import java.nio.file.Files
 
 @Component
 class SSE3Service(
@@ -14,10 +12,10 @@ class SSE3Service(
 ) {
 
     companion object {
-        val GAMENAME_VAL: String = "CHECKCC"
-        val GAMENAME_KEY: String = "game"
-        val EVENT_VAL: String = "HEALTH"
-        val EVENT_KEY: String = "event"
+        const val GAMENAME_VAL: String = "CHECKCC"
+        const val GAMENAME_KEY: String = "game"
+        const val EVENT_VAL: String = "HEALTH"
+        const val EVENT_KEY: String = "event"
     }
 
     private var address = ""
@@ -105,11 +103,11 @@ class SSE3Service(
         var jsonAddressStr = ""
         val corePropsFileName = if (System.getProperty("os.name").startsWith("Windows")) {
             System.getenv("PROGRAMDATA") +
-                    "\\SteelSeries\\SteelSeries Engine 3\\coreProps.json";
+                    "\\SteelSeries\\SteelSeries Engine 3\\coreProps.json"
         } else {
             // Mac path to coreProps.json
             "/Library/Application Support/" +
-                    "SteelSeries Engine 3/coreProps.json";
+                    "SteelSeries Engine 3/coreProps.json"
         }
 
         try {

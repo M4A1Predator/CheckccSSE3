@@ -10,4 +10,6 @@
 # }
 # New-Service @params
 
-
+.\Checkcc.exe uninstall
+Start-Sleep -Seconds 5
+.\Checkcc.exe install

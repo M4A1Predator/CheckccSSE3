@@ -4,6 +4,7 @@
     <description>Display Crypto Price on Steelseries Keyboard</description>
     <env name="CHECKCC_HOME" value="%BASE%"/>
     <executable>java</executable>
-    <arguments>-Xmx256m -jar "D:\plusplus\checkcc\build\libs\checkcc-0.0.1.jar"</arguments>
+    <arguments>-Xmx256m -jar "%BASE%\checkcc-0.0.1.jar"</arguments>
     <logmode>rotate</logmode>
+    <startmode>Manual</startmode>
 </service>
